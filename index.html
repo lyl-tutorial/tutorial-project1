@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <!-- <link href="./reset.css"> -->
+        <style>
+            body {
+                background-color: rgb(245, 246, 247);
+                margin: 0;
+                overflow: hidden;
+                height: 100vh;
+            }
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 75px;
+                border-bottom: 1px solid gainsboro;
+                align-items: center;
+                background-color: #fff;
+                padding: 0 16px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 40px;
+                margin-right: 20px;
+            }
+
+            .left, .right {
+                display: flex;
+                align-items: center;
+            }
+
+            .left-menu + .left-menu {
+                margin-left: 20px;
+            }
+
+            .container {
+                display: flex;
+                padding: 0 0 0 16px;
+                overflow: hidden;
+            }
+
+            aside {
+                display: flex;
+                flex-direction: column;
+                min-width: 240px;
+                height: calc(100vh - 76px);
+                overflow: auto;
+                border-right: 1px solid gainsboro;
+            }
+
+            .aside-menu {
+                min-height: 60px;
+                cursor: pointer;
+                line-height: 60px;
+                text-align: center;
+                border-bottom: 1px solid gainsboro;
+            }
+
+            main {
+                padding: 10px 20px;
+                flex: auto;
+                word-break: break-all;
+                height: calc(100vh - 76px);
+                overflow: auto;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="left">
+                <div class="left-menu">菜单一</div>
+                <div class="left-menu">菜单二</div>
+            </div>
+            <div class="right">
+                <img src="./avatar.png" >
+                <div>菜单一</div>
+            </div>
+        </header>
+        <div class="container">
+            <aside>
+                <div class="aside-menu">菜单一</div>
+                <div class="aside-menu">菜单二</div>
+                <div class="aside-menu">菜单一</div>
+                <div class="aside-menu">菜单二</div>
+                <div class="aside-menu">菜单一</div>
+                <div class="aside-menu">菜单二</div>
+                <div class="aside-menu">菜单一</div>
+                <div class="aside-menu">菜单二</div>
+                <div class="aside-menu">菜单一</div>
+                <div class="aside-menu">菜单二</div>
+                <div class="aside-menu">菜单一</div>
+                <div class="aside-menu">菜单二</div>
+                <div class="aside-menu">菜单三</div>
+                <div class="aside-menu">菜单三</div>
+                <div class="aside-menu">菜单三</div>
+                <div class="aside-menu">菜单三</div>
+            </aside>
+            <main>
+                <div>
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                </div>
+                <br />
+                <div>
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                </div>
+                <br />
+                <div>
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                </div>
+                <br />
+                <div>
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                </div>
+                <br />
+                <div>
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                </div>
+                <br />
+                <div>
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
