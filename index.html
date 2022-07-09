@@ -1,153 +1,145 @@
 <html>
-    <head>
-        <!-- <link href="./reset.css"> -->
-        <style>
-            body {
-                background-color: rgb(245, 246, 247);
-                margin: 0;
-                overflow: hidden;
-                height: 100vh;
-            }
-            header {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                height: 75px;
-                border-bottom: 1px solid gainsboro;
-                align-items: center;
-                background-color: #fff;
-                padding: 0 16px;
-            }
 
-            img {
-                width: 50px;
-                height: 50px;
-                border-radius: 40px;
-                margin-right: 20px;
-            }
+<head>
+    <!-- <link href="./reset.css"> -->
+    <style>
+        body {
+            background-color: rgb(245, 246, 247);
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
 
-            .left, .right {
-                display: flex;
-                align-items: center;
-            }
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 75px;
+            border-bottom: 1px solid gainsboro;
+            align-items: center;
+            background-color: #fff;
+            padding: 0 16px;
+        }
 
-            .left-menu + .left-menu {
-                margin-left: 20px;
-            }
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 40px;
+            margin-right: 20px;
+        }
 
-            .container {
-                display: flex;
-                padding: 0 0 0 16px;
-                overflow: hidden;
-            }
+        .left,
+        .right {
+            display: flex;
+            align-items: center;
+        }
 
-            aside {
-                display: flex;
-                flex-direction: column;
-                min-width: 240px;
-                height: calc(100vh - 76px);
-                overflow: auto;
-                border-right: 1px solid gainsboro;
-            }
+        .left-menu+.left-menu {
+            margin-left: 20px;
+        }
 
-            .aside-menu {
-                min-height: 60px;
-                cursor: pointer;
-                line-height: 60px;
-                text-align: center;
-                border-bottom: 1px solid gainsboro;
-            }
+        .container {
+            display: flex;
+            padding: 0 0 0 16px;
+            overflow: hidden;
+        }
 
-            main {
-                padding: 10px 20px;
-                flex: auto;
-                word-break: break-all;
-                height: calc(100vh - 76px);
-                overflow: auto;
+        aside {
+            display: flex;
+            flex-direction: column;
+            min-width: 240px;
+            height: calc(100vh - 76px);
+            overflow: auto;
+            border-right: 1px solid gainsboro;
+        }
 
-            }
-        </style>
-    </head>
+        .aside-menu:hover {
+            background-color: gray;
+        }
 
-    <body>
-        <header>
-            <div class="left">
-                <div class="left-menu">菜单一</div>
-                <div class="left-menu">菜单二</div>
-            </div>
-            <div class="right">
-                <img src="./avatar.png" >
-                <div>菜单一</div>
-            </div>
-        </header>
-        <div class="container">
-            <aside>
-                <div class="aside-menu">菜单一</div>
-                <div class="aside-menu">菜单二</div>
-                <div class="aside-menu">菜单一</div>
-                <div class="aside-menu">菜单二</div>
-                <div class="aside-menu">菜单一</div>
-                <div class="aside-menu">菜单二</div>
-                <div class="aside-menu">菜单一</div>
-                <div class="aside-menu">菜单二</div>
-                <div class="aside-menu">菜单一</div>
-                <div class="aside-menu">菜单二</div>
-                <div class="aside-menu">菜单一</div>
-                <div class="aside-menu">菜单二</div>
-                <div class="aside-menu">菜单三</div>
-                <div class="aside-menu">菜单三</div>
-                <div class="aside-menu">菜单三</div>
-                <div class="aside-menu">菜单三</div>
-            </aside>
-            <main>
-                <div>
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                </div>
-                <br />
-                <div>
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                </div>
-                <br />
-                <div>
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                </div>
-                <br />
-                <div>
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                </div>
-                <br />
-                <div>
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                </div>
-                <br />
-                <div>
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                    ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent
-                </div>
-            </main>
+        .active {
+            background-color: orange;
+        }
+
+        .active:hover {
+            background-color: orange;
+        }
+
+        .aside-menu {
+            min-height: 60px;
+            cursor: pointer;
+            line-height: 60px;
+            text-align: center;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        main {
+            padding: 10px 20px;
+            flex: auto;
+            word-break: break-all;
+            height: calc(100vh - 76px);
+            overflow: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <div class="left-menu">菜单一</div>
+            <div class="left-menu">菜单二</div>
         </div>
-    </body>
+        <div class="right">
+            <img src="./avatar.png">
+            <div>菜单一</div>
+        </div>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="aside-menu" id="menu1">菜单一</div>
+            <div class="aside-menu" id="menu2">菜单二</div>
+            <div class="aside-menu" id="menu3">菜单三</div>
+        </aside>
+        <main id="text">
+
+        </main>
+    </div>
+</body>
+
+<script>
+    // DOM API
+    const menus = document.querySelectorAll('.aside-menu')
+    const text = document.querySelector('#text')
+
+    const contents = {
+        menu1: 'wqefweqfwecweqvwfwq',
+        menu2: '31234312041023403214821',
+        menu3: 'xxxxxxxxxxxxx'
+    }
+
+    function handleClick(i) {
+        for (let m = 0; m < menus.length; m++) {
+            if (m !== i) {
+                menus[m].classList.remove('active')
+            } else {
+                menus[i].classList.add('active')
+                text.innerHTML = contents[`menu${i + 1}`]
+            }
+        }
+    }
+
+
+    for (let i = 0; i < menus.length; i++) {
+        menus[i].addEventListener('click', handleClick.bind(null, i))
+    }
+
+
+    window.onload = function () {
+        handleClick(0)
+    }
+
+
+</script>
+
 </html>
