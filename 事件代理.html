@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>事件代理</title>
+    <style>
+        li {
+            height: 40px;
+            border: 1px solid gainsboro;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>F</li>
+    <li>G</li>
+    <li>H</li>
+</ul>
+
+<script>
+    // 第一种方案
+    // const liElems = document.querySelectorAll('li')
+    // liElems.forEach(function (li) {
+    //     li.addEventListener('click', function (ev) {
+    //         console.log(ev.target.innerText)
+    //     })
+    // })
+
+    // 第二种方案
+    const ulEle = document.querySelector('ul')
+    ulEle.addEventListener('click', function (ev) {
+        console.log(ev.target.innerText)
+    })
+</script>
+</body>
+</html>

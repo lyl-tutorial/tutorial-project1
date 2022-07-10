@@ -1,7 +1,7 @@
-<html>
+<html lang="ch">
 
 <head>
-    <!-- <link href="./reset.css"> -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <style>
         body {
             background-color: rgb(245, 246, 247);
@@ -34,7 +34,7 @@
             align-items: center;
         }
 
-        .left-menu+.left-menu {
+        .left-menu + .left-menu {
             margin-left: 20px;
         }
 
@@ -81,64 +81,71 @@
             overflow: auto;
 
         }
+
+        .text {
+            display: none;
+        }
+
+        .text-active {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="left">
-            <div class="left-menu">菜单一</div>
-            <div class="left-menu">菜单二</div>
-        </div>
-        <div class="right">
-            <img src="./avatar.png">
-            <div>菜单一</div>
-        </div>
-    </header>
-    <div class="container">
-        <aside>
-            <div class="aside-menu" id="menu1">菜单一</div>
-            <div class="aside-menu" id="menu2">菜单二</div>
-            <div class="aside-menu" id="menu3">菜单三</div>
-        </aside>
-        <main id="text">
-
-        </main>
+<header>
+    <div class="left">
+        <div class="left-menu">菜单一</div>
+        <div class="left-menu">菜单二</div>
     </div>
+    <div class="right">
+        <img src="./avatar.png">
+        <div>菜单一</div>
+    </div>
+</header>
+<div class="container">
+    <aside>
+        <div class="aside-menu" id="0">菜单一</div>
+        <div class="aside-menu" id="1">菜单二</div>
+        <div class="aside-menu" id="2">菜单三</div>
+    </aside>
+    <main id="text0" class="text">
+        <h1>菜单一内容</h1>
+        <p>KKK</p>
+    </main>
+    <main id="text1" class="text">
+        <h1>菜单二内容</h1>
+    </main>
+    <main id="text2" class="text">
+        <h1>菜单三内容</h1>
+    </main>
+</div>
 </body>
 
 <script>
-    // DOM API
-    const menus = document.querySelectorAll('.aside-menu')
-    const text = document.querySelector('#text')
+    const asideEle = document.querySelector('aside')
 
-    const contents = {
-        menu1: 'wqefweqfwecweqvwfwq',
-        menu2: '31234312041023403214821',
-        menu3: 'xxxxxxxxxxxxx'
-    }
+    function handleClick(target) {
+        const id = Number(target.id)
+        const parent = target.parentElement
 
-    function handleClick(i) {
-        for (let m = 0; m < menus.length; m++) {
-            if (m !== i) {
-                menus[m].classList.remove('active')
+        parent.querySelectorAll('.aside-menu').forEach(function (m, i) {
+            if (i === id) {
+                m.classList.add('active')
+                document.querySelector(`#text${i}`).classList.add('text-active')
             } else {
-                menus[i].classList.add('active')
-                text.innerHTML = contents[`menu${i + 1}`]
+                m.classList.remove('active')
+                document.querySelector(`#text${i}`).classList.remove('text-active')
             }
-        }
+        })
     }
 
+    asideEle.addEventListener('click', function (ev) {
+        const target = ev.target
+        handleClick(target)
+    })
 
-    for (let i = 0; i < menus.length; i++) {
-        menus[i].addEventListener('click', handleClick.bind(null, i))
-    }
-
-
-    window.onload = function () {
-        handleClick(0)
-    }
-
+    handleClick(asideEle.children[0])
 
 </script>
 
